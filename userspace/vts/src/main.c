@@ -1,7 +1,7 @@
 #include "vts_fifo.h"
 #include "vts_log.h"
 #include "vts_threads.h"
-
+#include "vts_config.h"
 #include <signal.h>
 #include <stdatomic.h>
 #include <stdio.h>
@@ -116,5 +116,12 @@ int main(int argc, char **argv) {
           (unsigned long long)m.drops,
           (unsigned long long)m.max_depth);
 
+  static vts_config_t g_cfg;
+// inside main():
+const char *cfg = getenv("VTS_CONFIG");
+if (vts_config_load(cfg ? cfg : "configs/examples/vts_config.xml", &g_cfg) < 0) {
+fprintf(stderr, "[E] VTS_CONFIG load failed. Using defaults.\n");
+}        
   return 0;
 }
+

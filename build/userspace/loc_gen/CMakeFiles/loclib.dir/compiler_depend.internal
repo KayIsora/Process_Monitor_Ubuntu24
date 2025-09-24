@@ -49,6 +49,7 @@ userspace/loc_gen/CMakeFiles/loclib.dir/src/room_mem_reader.c.o
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
+ /usr/include/stdlib.h
  /usr/include/string.h
  /usr/include/unistd.h
  /usr/include/x86_64-linux-gnu/bits/confname.h
@@ -73,6 +74,9 @@ userspace/loc_gen/CMakeFiles/loclib.dir/src/room_mem_reader.c.o
  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h
  /usr/include/x86_64-linux-gnu/bits/stdio2.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h
  /usr/include/x86_64-linux-gnu/bits/time64.h
@@ -92,6 +96,8 @@ userspace/loc_gen/CMakeFiles/loclib.dir/src/room_mem_reader.c.o
  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h
  /usr/include/x86_64-linux-gnu/bits/unistd.h
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h

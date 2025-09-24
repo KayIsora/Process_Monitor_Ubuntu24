@@ -1,16 +1,14 @@
-# cli/CMakeLists.txt
-add_executable(pmcli
-  src/system_monitor.c)
+# cli/CMakeLists.txt — chỉ define target cho thư mục cli/, không gọi add_subdirectory ở đây
 
-target_include_directories(pmcli PRIVATE
-  ${CMAKE_SOURCE_DIR}/userspace/loc_gen/include
-  ${CMAKE_SOURCE_DIR}/userspace/vts/include
-  ${CMAKE_SOURCE_DIR}/userspace/libpm/include
+add_executable(system_monitor
+  src/system_monitor.c
 )
-target_link_libraries(pmcli PRIVATE loclib pm vtslog)
-target_link_libraries(pmcli PRIVATE vtslog)
-target_link_libraries(pmcli PRIVATE loclib pm)
 
-# và để chắc ăn include được headers:
-target_include_directories(pmcli PRIVATE ${CMAKE_SOURCE_DIR}/userspace/vts/include)
+# Xuất ra binary tên "system-monitor"
+set_target_properties(system_monitor PROPERTIES OUTPUT_NAME "system-monitor")
 
+# CLI này chỉ dùng socket libc -> không cần link loclib/pm/vtslog
+# Nếu sau này cần, mới thêm target_link_libraries(...) tương ứng.
+
+# Cài đặt vào bin/
+install(TARGETS system_monitor RUNTIME DESTINATION bin)

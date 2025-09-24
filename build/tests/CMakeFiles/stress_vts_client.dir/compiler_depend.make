@@ -9,6 +9,7 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o: /home/kayu24/Deskt
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/inttypes.h \
   /usr/include/linux/errno.h \
   /usr/include/netinet/in.h \
   /usr/include/pthread.h \
@@ -110,8 +111,6 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o: /home/kayu24/Deskt
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -158,6 +157,8 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o: /home/kayu24/Deskt
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
@@ -194,7 +195,11 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o: /home/kayu24/Deskt
 
 /usr/include/x86_64-linux-gnu/bits/sockaddr.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket-constants.h:
+
+/usr/include/netinet/in.h:
 
 /usr/include/stdint.h:
 
@@ -220,23 +225,21 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o: /home/kayu24/Deskt
 
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/tests/vts/stress_client.c:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
 /usr/include/errno.h:
 
 /usr/include/pthread.h:
 
 /usr/include/features.h:
 
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
 /usr/include/linux/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket_type.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket-constants.h:
-
-/usr/include/netinet/in.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -245,6 +248,8 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o: /home/kayu24/Deskt
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -257,8 +262,6 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o: /home/kayu24/Deskt
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/in.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 

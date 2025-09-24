@@ -90,7 +90,7 @@ clean: tests/clean
 # Directory level rules for directory cli
 
 # Recursive "all" directory target.
-cli/all: cli/CMakeFiles/pmcli.dir/all
+cli/all: cli/CMakeFiles/system_monitor.dir/all
 .PHONY : cli/all
 
 # Recursive "preinstall" directory target.
@@ -98,7 +98,7 @@ cli/preinstall:
 .PHONY : cli/preinstall
 
 # Recursive "clean" directory target.
-cli/clean: cli/CMakeFiles/pmcli.dir/clean
+cli/clean: cli/CMakeFiles/system_monitor.dir/clean
 .PHONY : cli/clean
 
 #=============================================================================
@@ -335,32 +335,30 @@ userspace/loc_gen/CMakeFiles/locgend.dir/clean:
 .PHONY : userspace/loc_gen/CMakeFiles/locgend.dir/clean
 
 #=============================================================================
-# Target rules for target cli/CMakeFiles/pmcli.dir
+# Target rules for target cli/CMakeFiles/system_monitor.dir
 
 # All Build rule for target.
-cli/CMakeFiles/pmcli.dir/all: userspace/libpm/CMakeFiles/pm.dir/all
-cli/CMakeFiles/pmcli.dir/all: userspace/vts/CMakeFiles/vtslog.dir/all
-cli/CMakeFiles/pmcli.dir/all: userspace/loc_gen/CMakeFiles/loclib.dir/all
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/depend
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=16,17 "Built target pmcli"
-.PHONY : cli/CMakeFiles/pmcli.dir/all
+cli/CMakeFiles/system_monitor.dir/all:
+	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/depend
+	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=20,21 "Built target system_monitor"
+.PHONY : cli/CMakeFiles/system_monitor.dir/all
 
 # Build rule for subdir invocation for target.
-cli/CMakeFiles/pmcli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles 15
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/pmcli.dir/all
+cli/CMakeFiles/system_monitor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/system_monitor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles 0
-.PHONY : cli/CMakeFiles/pmcli.dir/rule
+.PHONY : cli/CMakeFiles/system_monitor.dir/rule
 
 # Convenience name for target.
-pmcli: cli/CMakeFiles/pmcli.dir/rule
-.PHONY : pmcli
+system_monitor: cli/CMakeFiles/system_monitor.dir/rule
+.PHONY : system_monitor
 
 # clean rule for target.
-cli/CMakeFiles/pmcli.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/clean
-.PHONY : cli/CMakeFiles/pmcli.dir/clean
+cli/CMakeFiles/system_monitor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/clean
+.PHONY : cli/CMakeFiles/system_monitor.dir/clean
 
 #=============================================================================
 # Target rules for target tests/CMakeFiles/test_io_backoff.dir
@@ -447,7 +445,7 @@ tests/CMakeFiles/test_integ_fakefs.dir/clean:
 tests/CMakeFiles/stress_writer.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/stress_writer.dir/build.make tests/CMakeFiles/stress_writer.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/stress_writer.dir/build.make tests/CMakeFiles/stress_writer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=20,21 "Built target stress_writer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=18,19 "Built target stress_writer"
 .PHONY : tests/CMakeFiles/stress_writer.dir/all
 
 # Build rule for subdir invocation for target.
@@ -473,7 +471,7 @@ tests/CMakeFiles/stress_writer.dir/clean:
 tests/CMakeFiles/stress_vts_client.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/stress_vts_client.dir/build.make tests/CMakeFiles/stress_vts_client.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/stress_vts_client.dir/build.make tests/CMakeFiles/stress_vts_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=18,19 "Built target stress_vts_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=16,17 "Built target stress_vts_client"
 .PHONY : tests/CMakeFiles/stress_vts_client.dir/all
 
 # Build rule for subdir invocation for target.

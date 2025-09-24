@@ -38,6 +38,7 @@ userspace/vts/CMakeFiles/vts.dir/src/fifo.c.o: /home/kayu24/Desktop/Process_Moni
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 userspace/vts/CMakeFiles/vts.dir/src/main.c.o: /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/src/main.c \
+  /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_config.h \
   /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_fifo.h \
   /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_log.h \
   /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_threads.h \
@@ -374,6 +375,7 @@ userspace/vts/CMakeFiles/vts.dir/src/req_handler.c.o: /home/kayu24/Desktop/Proce
   /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
@@ -475,6 +477,7 @@ userspace/vts/CMakeFiles/vts.dir/src/threads_recv.c.o: /home/kayu24/Desktop/Proc
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
+  /usr/include/stdlib.h \
   /usr/include/string.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
@@ -509,6 +512,9 @@ userspace/vts/CMakeFiles/vts.dir/src/threads_recv.c.o: /home/kayu24/Desktop/Proc
   /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
   /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
@@ -541,6 +547,8 @@ userspace/vts/CMakeFiles/vts.dir/src/threads_recv.c.o: /home/kayu24/Desktop/Proc
   /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
   /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
@@ -555,7 +563,51 @@ userspace/vts/CMakeFiles/vts.dir/src/threads_recv.c.o: /home/kayu24/Desktop/Proc
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/src/vts_config.c \
-  /usr/include/stdc-predef.h
+  /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_config.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/src/vts_config.c:
@@ -612,6 +664,8 @@ userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Proces
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
@@ -636,15 +690,13 @@ userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Proces
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
 /usr/include/sched.h:
+
+/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_log.h:
 
 /usr/include/pthread.h:
 
-/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_log.h:
+/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_config.h:
 
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/src/fifo.c:
 
@@ -665,8 +717,6 @@ userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Proces
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/include/linux/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -701,6 +751,10 @@ userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Proces
 /usr/include/features-time64.h:
 
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_fifo.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/epoll.h:
 
@@ -753,6 +807,10 @@ userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Proces
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/src/main.c:
 
 /usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -818,10 +876,6 @@ userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Proces
 
 /usr/include/linux/errno.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
@@ -879,6 +933,8 @@ userspace/vts/CMakeFiles/vts.dir/src/vts_config.c.o: /home/kayu24/Desktop/Proces
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_threads.h:
 
 /usr/include/linux/stddef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 

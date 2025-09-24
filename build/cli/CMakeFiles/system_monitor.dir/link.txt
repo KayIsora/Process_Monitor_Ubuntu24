@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/system_monitor.dir/src/system_monitor.c.o -o ../bin/system-monitor 

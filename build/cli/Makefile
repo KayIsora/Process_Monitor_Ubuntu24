@@ -172,25 +172,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-cli/CMakeFiles/pmcli.dir/rule:
-	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/pmcli.dir/rule
-.PHONY : cli/CMakeFiles/pmcli.dir/rule
+cli/CMakeFiles/system_monitor.dir/rule:
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/system_monitor.dir/rule
+.PHONY : cli/CMakeFiles/system_monitor.dir/rule
 
 # Convenience name for target.
-pmcli: cli/CMakeFiles/pmcli.dir/rule
-.PHONY : pmcli
+system_monitor: cli/CMakeFiles/system_monitor.dir/rule
+.PHONY : system_monitor
 
 # fast build rule for target.
-pmcli/fast:
-	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/build
-.PHONY : pmcli/fast
+system_monitor/fast:
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/build
+.PHONY : system_monitor/fast
 
 src/system_monitor.o: src/system_monitor.c.o
 .PHONY : src/system_monitor.o
 
 # target to build an object file
 src/system_monitor.c.o:
-	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/src/system_monitor.c.o
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/src/system_monitor.c.o
 .PHONY : src/system_monitor.c.o
 
 src/system_monitor.i: src/system_monitor.c.i
@@ -198,7 +198,7 @@ src/system_monitor.i: src/system_monitor.c.i
 
 # target to preprocess a source file
 src/system_monitor.c.i:
-	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/src/system_monitor.c.i
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/src/system_monitor.c.i
 .PHONY : src/system_monitor.c.i
 
 src/system_monitor.s: src/system_monitor.c.s
@@ -206,7 +206,7 @@ src/system_monitor.s: src/system_monitor.c.s
 
 # target to generate assembly for a file
 src/system_monitor.c.s:
-	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/src/system_monitor.c.s
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/src/system_monitor.c.s
 .PHONY : src/system_monitor.c.s
 
 # Help Target
@@ -222,7 +222,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... pmcli"
+	@echo "... system_monitor"
 	@echo "... src/system_monitor.o"
 	@echo "... src/system_monitor.i"
 	@echo "... src/system_monitor.s"

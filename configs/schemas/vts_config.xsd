@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="vts_config">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="bind_addr" type="xs:string" minOccurs="0"/>
+<xs:element name="port" type="xs:unsignedShort" minOccurs="0"/>
+<xs:element name="accept_backlog" type="xs:int" minOccurs="0"/>
+<xs:element name="io_timeout_ms" type="xs:int" minOccurs="0"/>
+<xs:element name="client_pool_size" type="xs:int" minOccurs="0"/>
+<xs:element name="retry_max" type="xs:int" minOccurs="0"/>
+<xs:element name="retry_backoff_ms" type="xs:int" minOccurs="0"/>
+<xs:element name="dedup_ttl_ms" type="xs:int" minOccurs="0"/>
+<xs:element name="log_path" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

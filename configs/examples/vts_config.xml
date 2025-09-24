@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<vts_config>
+  <bind_addr>0.0.0.0</bind_addr>
+  <port>9000</port>
+  <!-- Pha 7: bật UDP song song -->
+  <udp_port>9001</udp_port>
+
+  <accept_backlog>256</accept_backlog>
+  <io_timeout_ms>3000</io_timeout_ms>
+  <client_pool_size>16</client_pool_size>
+
+  <retry_max>5</retry_max>
+  <retry_backoff_ms>40</retry_backoff_ms>
+  <dedup_ttl_ms>60000</dedup_ttl_ms>
+
+  <log_path>logs/vts.log</log_path>
+  <!-- Pha 7: warm-start dedup để restart an toàn -->
+  <dedup_warm_file>logs/vts_reqids.bin</dedup_warm_file>
+</vts_config>

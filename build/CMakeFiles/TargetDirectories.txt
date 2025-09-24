@@ -32,7 +32,7 @@
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen/CMakeFiles/install.dir
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen/CMakeFiles/install/local.dir
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen/CMakeFiles/install/strip.dir
-/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/cli/CMakeFiles/pmcli.dir
+/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/cli/CMakeFiles/system_monitor.dir
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/cli/CMakeFiles/test.dir
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/cli/CMakeFiles/edit_cache.dir
 /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/cli/CMakeFiles/rebuild_cache.dir

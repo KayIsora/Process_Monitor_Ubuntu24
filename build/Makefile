@@ -250,17 +250,17 @@ locgend/fast:
 .PHONY : locgend/fast
 
 #=============================================================================
-# Target rules for targets named pmcli
+# Target rules for targets named system_monitor
 
 # Build rule for target.
-pmcli: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pmcli
-.PHONY : pmcli
+system_monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 system_monitor
+.PHONY : system_monitor
 
 # fast build rule for target.
-pmcli/fast:
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/pmcli.dir/build.make cli/CMakeFiles/pmcli.dir/build
-.PHONY : pmcli/fast
+system_monitor/fast:
+	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/system_monitor.dir/build.make cli/CMakeFiles/system_monitor.dir/build
+.PHONY : system_monitor/fast
 
 #=============================================================================
 # Target rules for targets named test_io_backoff
@@ -344,9 +344,9 @@ help:
 	@echo "... locgend"
 	@echo "... loclib"
 	@echo "... pm"
-	@echo "... pmcli"
 	@echo "... stress_vts_client"
 	@echo "... stress_writer"
+	@echo "... system_monitor"
 	@echo "... test_cb"
 	@echo "... test_integ_fakefs"
 	@echo "... test_io_backoff"

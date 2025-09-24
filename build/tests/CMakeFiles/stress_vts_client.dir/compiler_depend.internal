@@ -10,6 +10,7 @@ tests/CMakeFiles/stress_vts_client.dir/vts/stress_client.c.o
  /usr/include/errno.h
  /usr/include/features-time64.h
  /usr/include/features.h
+ /usr/include/inttypes.h
  /usr/include/linux/errno.h
  /usr/include/netinet/in.h
  /usr/include/pthread.h
