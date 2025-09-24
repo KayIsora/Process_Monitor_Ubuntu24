@@ -4,6 +4,7 @@ add_library(loclib STATIC
   src/xml_loader.c
   src/room_store.c
   src/vts_adapter.c
+  src/compat_shim.c
 )
 
 add_executable(loc_gen
@@ -18,16 +19,13 @@ target_include_directories(loclib PUBLIC
 target_link_libraries(loc_gen PRIVATE pm vtslog)
 
 #####
-add_library(loclib
-  src/xml_loader.c
-  src/room_store.c
-  src/room_mem_reader.c
-  src/vts_adapter.c
-)
-target_include_directories(loclib PUBLIC include ../libpm/include)
-target_link_libraries(loclib PUBLIC pm vtslog)  # backoff/cb trong libpm; vtslog nếu cần
-
 add_executable(locgend src/loc_main.c)
+target_include_directories(locgend PRIVATE include ../libpm/include)
 target_link_libraries(locgend PRIVATE loclib pm)
 install(TARGETS locgend RUNTIME DESTINATION bin)
+target_include_directories(loc_gen PRIVATE include ../libpm/include)
+target_link_libraries(loc_gen PRIVATE loclib pm)
 
+target_compile_definitions(loclib  PRIVATE VTS_PORT=9000)
+target_compile_definitions(loc_gen PRIVATE VTS_PORT=9000)
+target_compile_definitions(locgend PRIVATE VTS_PORT=9000)

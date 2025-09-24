@@ -35,6 +35,7 @@ cli/CMakeFiles/pmcli.dir/src/system_monitor.c.o: /home/kayu24/Desktop/Process_Mo
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
 
@@ -87,6 +88,8 @@ cli/CMakeFiles/pmcli.dir/src/system_monitor.c.o: /home/kayu24/Desktop/Process_Mo
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 

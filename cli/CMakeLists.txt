@@ -9,6 +9,7 @@ target_include_directories(pmcli PRIVATE
 )
 target_link_libraries(pmcli PRIVATE loclib pm vtslog)
 target_link_libraries(pmcli PRIVATE vtslog)
+target_link_libraries(pmcli PRIVATE loclib pm)
 
 # và để chắc ăn include được headers:
 target_include_directories(pmcli PRIVATE ${CMAKE_SOURCE_DIR}/userspace/vts/include)

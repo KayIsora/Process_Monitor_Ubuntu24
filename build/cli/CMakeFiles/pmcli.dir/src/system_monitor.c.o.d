@@ -30,4 +30,5 @@ cli/CMakeFiles/pmcli.dir/src/system_monitor.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/loc_gen/include/loc_api.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include/vts_log.h

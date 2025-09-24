@@ -1,1 +1,1 @@
-/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/loc_gen.dir/src/loc_main.c.o -o ../../bin/loc_gen  ../../lib/libpm.a ../../lib/libvtslog.a -latomic 
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/loc_gen.dir/src/loc_main.c.o -o ../../bin/loc_gen  ../../lib/libpm.a ../../lib/libvtslog.a ../../lib/libloclib.a ../../lib/libpm.a -latomic 

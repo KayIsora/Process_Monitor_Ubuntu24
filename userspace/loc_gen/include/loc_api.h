@@ -1,5 +1,6 @@
 #pragma once
 #include <stdbool.h>
+#include <stddef.h>
 
 #ifdef __cplusplus
 extern "C" { 
@@ -24,6 +25,8 @@ typedef struct {
 /* XML */
 int loc_load_rooms_xml(const char *path, room_list_t *out);    // alloc items
 void loc_free_rooms(room_list_t *rl);
+/* --- COMPAT: giữ API cũ cho pmcli --- */
+int loc_read_rooms(const char *path, char *out, size_t outlen); // deprecated shim
 
 /* ROOM STORE (in-memory desired state) */
 int room_store_init(void);

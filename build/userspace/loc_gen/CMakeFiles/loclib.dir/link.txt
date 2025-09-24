@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../../lib/libloclib.a CMakeFiles/loclib.dir/src/room_mem_reader.c.o CMakeFiles/loclib.dir/src/xml_loader.c.o CMakeFiles/loclib.dir/src/room_store.c.o CMakeFiles/loclib.dir/src/vts_adapter.c.o
+/usr/bin/ar qc ../../lib/libloclib.a CMakeFiles/loclib.dir/src/room_mem_reader.c.o CMakeFiles/loclib.dir/src/xml_loader.c.o CMakeFiles/loclib.dir/src/room_store.c.o CMakeFiles/loclib.dir/src/vts_adapter.c.o CMakeFiles/loclib.dir/src/compat_shim.c.o
 /usr/bin/ranlib ../../lib/libloclib.a

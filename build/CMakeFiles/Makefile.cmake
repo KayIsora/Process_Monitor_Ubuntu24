@@ -55,6 +55,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "userspace/vts/CMakeFiles/vts.dir/DependInfo.cmake"
   "userspace/loc_gen/CMakeFiles/loclib.dir/DependInfo.cmake"
   "userspace/loc_gen/CMakeFiles/loc_gen.dir/DependInfo.cmake"
+  "userspace/loc_gen/CMakeFiles/locgend.dir/DependInfo.cmake"
   "cli/CMakeFiles/pmcli.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_io_backoff.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_cb.dir/DependInfo.cmake"

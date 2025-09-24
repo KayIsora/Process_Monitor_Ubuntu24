@@ -96,6 +96,8 @@ bin/pmcli: lib/libloclib.a
 bin/pmcli: lib/libpm.a
 bin/pmcli: lib/libvtslog.a
 bin/pmcli: lib/libvtslog.a
+bin/pmcli: lib/libloclib.a
+bin/pmcli: lib/libpm.a
 bin/pmcli: cli/CMakeFiles/pmcli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/pmcli"
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/cli && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pmcli.dir/link.txt --verbose=$(VERBOSE)

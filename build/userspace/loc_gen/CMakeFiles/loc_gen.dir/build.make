@@ -94,6 +94,8 @@ bin/loc_gen: userspace/loc_gen/CMakeFiles/loc_gen.dir/src/loc_main.c.o
 bin/loc_gen: userspace/loc_gen/CMakeFiles/loc_gen.dir/build.make
 bin/loc_gen: lib/libpm.a
 bin/loc_gen: lib/libvtslog.a
+bin/loc_gen: lib/libloclib.a
+bin/loc_gen: lib/libpm.a
 bin/loc_gen: userspace/loc_gen/CMakeFiles/loc_gen.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/loc_gen"
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/loc_gen.dir/link.txt --verbose=$(VERBOSE)

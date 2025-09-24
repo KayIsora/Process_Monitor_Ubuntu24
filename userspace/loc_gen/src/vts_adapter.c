@@ -8,6 +8,7 @@
 #include "loc_api.h"
 #include "backoff.h"
 #include "circuit_breaker.h"
+#include <sys/time.h>
 
 #ifndef VTS_HOST
 #define VTS_HOST "127.0.0.1"
@@ -24,6 +25,11 @@ static uint64_t gen_req_id(void){ return now_ms(); }
 
 static int connect_vts(void){
   int s=socket(AF_INET,SOCK_STREAM,0); if(s<0) return -1;
+
+  struct timeval tv; tv.tv_sec = 1; tv.tv_usec = 0;
+  setsockopt(s, SOL_SOCKET, SO_RCVTIMEO, &tv, sizeof(tv));
+  setsockopt(s, SOL_SOCKET, SO_SNDTIMEO, &tv, sizeof(tv));
+
   struct sockaddr_in a={0}; a.sin_family=AF_INET; a.sin_port=htons(VTS_PORT); a.sin_addr.s_addr=htonl(INADDR_LOOPBACK);
   if(connect(s,(struct sockaddr*)&a,sizeof(a))<0){ close(s); return -1; }
   return s;
@@ -43,22 +49,25 @@ static int recv_frame(int s, char *buf, size_t buflen){
 }
 
 static int vts_cmd_with_retry(const char *json_req, char *resp, size_t respsz){
-  cb_t cb; cb_init(&cb, /*fail_threshold*/3, /*reset_ms*/1000);
-  backoff_t bo; backoff_init(&bo, 10, 100, 600); // jitter inside lib
-  int attempt=0;
-  while(1){
-    if(cb_is_open(&cb)) return -2;
-    int s=connect_vts();
-    if(s>=0){
-      int rc= send_frame(s, json_req, (uint32_t)strlen(json_req));
-      if(rc==0){ int n=recv_frame(s, resp, respsz); close(s);
-        if(n>0){ cb_success(&cb); return 0; }
+  pm_backoff bo;
+  pm_backoff_init(&bo, /*init_us*/ 10000, /*max_us*/ 200000); // 10ms -> 200ms
+  int attempt = 0;
+
+  for(;;){
+    int s = connect_vts();
+    if(s >= 0){
+      int rc = send_frame(s, json_req, (uint32_t)strlen(json_req));
+      if(rc == 0){
+        int n = recv_frame(s, resp, respsz);
+        close(s);
+        if(n > 0) return 0;            // OK
+      } else {
+        close(s);
       }
-      close(s);
     }
-    cb_fail(&cb);
-    if(++attempt>=5) return -1;
-    backoff_sleep(&bo);
+    if(++attempt >= 5) return -1;      // hết retry
+    unsigned us = pm_backoff_next(&bo);
+    sleep(us);
   }
 }
 

@@ -6,5 +6,5 @@ C_DEFINES = -D_POSIX_C_SOURCE=200809L
 
 C_INCLUDES = -I/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/vts/include
 
-C_FLAGS = -O2 -g -DNDEBUG -std=c11
+C_FLAGS = -O3 -DNDEBUG -std=c11
 

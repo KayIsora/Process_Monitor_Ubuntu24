@@ -1,1 +1,1 @@
-/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/pmcli.dir/src/system_monitor.c.o -o ../bin/pmcli  ../lib/libloclib.a ../lib/libpm.a ../lib/libvtslog.a ../lib/libvtslog.a -latomic 
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/pmcli.dir/src/system_monitor.c.o -o ../bin/pmcli  ../lib/libloclib.a ../lib/libpm.a ../lib/libvtslog.a ../lib/libvtslog.a ../lib/libloclib.a ../lib/libpm.a -latomic 

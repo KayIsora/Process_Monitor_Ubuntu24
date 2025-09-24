@@ -1,1 +1,1 @@
-savedcmd_/home/kayu24/Desktop/Process_Monitor_Ubuntu24/kernel/my_driver/my_driver.o := ld -m elf_x86_64 -z noexecstack --no-warn-rwx-segments   -r -o /home/kayu24/Desktop/Process_Monitor_Ubuntu24/kernel/my_driver/my_driver.o @/home/kayu24/Desktop/Process_Monitor_Ubuntu24/kernel/my_driver/my_driver.mod 
+savedcmd_my_driver.o := ld -m elf_x86_64 -z noexecstack --no-warn-rwx-segments   -r -o my_driver.o @my_driver.mod 

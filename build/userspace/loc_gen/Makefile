@@ -95,6 +95,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen//CMakeFiles/progress.marks
@@ -154,12 +199,51 @@ loc_gen/fast:
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/loc_gen.dir/build.make userspace/loc_gen/CMakeFiles/loc_gen.dir/build
 .PHONY : loc_gen/fast
 
+# Convenience name for target.
+userspace/loc_gen/CMakeFiles/locgend.dir/rule:
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 userspace/loc_gen/CMakeFiles/locgend.dir/rule
+.PHONY : userspace/loc_gen/CMakeFiles/locgend.dir/rule
+
+# Convenience name for target.
+locgend: userspace/loc_gen/CMakeFiles/locgend.dir/rule
+.PHONY : locgend
+
+# fast build rule for target.
+locgend/fast:
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/locgend.dir/build.make userspace/loc_gen/CMakeFiles/locgend.dir/build
+.PHONY : locgend/fast
+
+src/compat_shim.o: src/compat_shim.c.o
+.PHONY : src/compat_shim.o
+
+# target to build an object file
+src/compat_shim.c.o:
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/loclib.dir/build.make userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.o
+.PHONY : src/compat_shim.c.o
+
+src/compat_shim.i: src/compat_shim.c.i
+.PHONY : src/compat_shim.i
+
+# target to preprocess a source file
+src/compat_shim.c.i:
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/loclib.dir/build.make userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.i
+.PHONY : src/compat_shim.c.i
+
+src/compat_shim.s: src/compat_shim.c.s
+.PHONY : src/compat_shim.s
+
+# target to generate assembly for a file
+src/compat_shim.c.s:
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/loclib.dir/build.make userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.s
+.PHONY : src/compat_shim.c.s
+
 src/loc_main.o: src/loc_main.c.o
 .PHONY : src/loc_main.o
 
 # target to build an object file
 src/loc_main.c.o:
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/loc_gen.dir/build.make userspace/loc_gen/CMakeFiles/loc_gen.dir/src/loc_main.c.o
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/locgend.dir/build.make userspace/loc_gen/CMakeFiles/locgend.dir/src/loc_main.c.o
 .PHONY : src/loc_main.c.o
 
 src/loc_main.i: src/loc_main.c.i
@@ -168,6 +252,7 @@ src/loc_main.i: src/loc_main.c.i
 # target to preprocess a source file
 src/loc_main.c.i:
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/loc_gen.dir/build.make userspace/loc_gen/CMakeFiles/loc_gen.dir/src/loc_main.c.i
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/locgend.dir/build.make userspace/loc_gen/CMakeFiles/locgend.dir/src/loc_main.c.i
 .PHONY : src/loc_main.c.i
 
 src/loc_main.s: src/loc_main.c.s
@@ -176,6 +261,7 @@ src/loc_main.s: src/loc_main.c.s
 # target to generate assembly for a file
 src/loc_main.c.s:
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/loc_gen.dir/build.make userspace/loc_gen/CMakeFiles/loc_gen.dir/src/loc_main.c.s
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build && $(MAKE) $(MAKESILENT) -f userspace/loc_gen/CMakeFiles/locgend.dir/build.make userspace/loc_gen/CMakeFiles/locgend.dir/src/loc_main.c.s
 .PHONY : src/loc_main.c.s
 
 src/room_mem_reader.o: src/room_mem_reader.c.o
@@ -281,10 +367,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... loc_gen"
+	@echo "... locgend"
 	@echo "... loclib"
+	@echo "... src/compat_shim.o"
+	@echo "... src/compat_shim.i"
+	@echo "... src/compat_shim.s"
 	@echo "... src/loc_main.o"
 	@echo "... src/loc_main.i"
 	@echo "... src/loc_main.s"

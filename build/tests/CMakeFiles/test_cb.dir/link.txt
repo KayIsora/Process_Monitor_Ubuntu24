@@ -1,1 +1,1 @@
-/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/test_cb.dir/libpm/test_cb.c.o -o ../bin/test_cb  ../lib/libpm.a 
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/test_cb.dir/libpm/test_cb.c.o -o ../bin/test_cb  ../lib/libpm.a 

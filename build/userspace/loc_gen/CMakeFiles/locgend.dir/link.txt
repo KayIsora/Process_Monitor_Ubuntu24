@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/locgend.dir/src/loc_main.c.o -o ../../bin/locgend  ../../lib/libloclib.a ../../lib/libpm.a 

@@ -125,12 +125,27 @@ userspace/loc_gen/CMakeFiles/loclib.dir/src/vts_adapter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/loclib.dir/src/vts_adapter.c.s"
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/loc_gen/src/vts_adapter.c -o CMakeFiles/loclib.dir/src/vts_adapter.c.s
 
+userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.o: userspace/loc_gen/CMakeFiles/loclib.dir/flags.make
+userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.o: /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/loc_gen/src/compat_shim.c
+userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.o: userspace/loc_gen/CMakeFiles/loclib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.o"
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.o -MF CMakeFiles/loclib.dir/src/compat_shim.c.o.d -o CMakeFiles/loclib.dir/src/compat_shim.c.o -c /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/loc_gen/src/compat_shim.c
+
+userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/loclib.dir/src/compat_shim.c.i"
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/loc_gen/src/compat_shim.c > CMakeFiles/loclib.dir/src/compat_shim.c.i
+
+userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/loclib.dir/src/compat_shim.c.s"
+	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/loc_gen/src/compat_shim.c -o CMakeFiles/loclib.dir/src/compat_shim.c.s
+
 # Object files for target loclib
 loclib_OBJECTS = \
 "CMakeFiles/loclib.dir/src/room_mem_reader.c.o" \
 "CMakeFiles/loclib.dir/src/xml_loader.c.o" \
 "CMakeFiles/loclib.dir/src/room_store.c.o" \
-"CMakeFiles/loclib.dir/src/vts_adapter.c.o"
+"CMakeFiles/loclib.dir/src/vts_adapter.c.o" \
+"CMakeFiles/loclib.dir/src/compat_shim.c.o"
 
 # External object files for target loclib
 loclib_EXTERNAL_OBJECTS =
@@ -139,9 +154,10 @@ lib/libloclib.a: userspace/loc_gen/CMakeFiles/loclib.dir/src/room_mem_reader.c.o
 lib/libloclib.a: userspace/loc_gen/CMakeFiles/loclib.dir/src/xml_loader.c.o
 lib/libloclib.a: userspace/loc_gen/CMakeFiles/loclib.dir/src/room_store.c.o
 lib/libloclib.a: userspace/loc_gen/CMakeFiles/loclib.dir/src/vts_adapter.c.o
+lib/libloclib.a: userspace/loc_gen/CMakeFiles/loclib.dir/src/compat_shim.c.o
 lib/libloclib.a: userspace/loc_gen/CMakeFiles/loclib.dir/build.make
 lib/libloclib.a: userspace/loc_gen/CMakeFiles/loclib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library ../../lib/libloclib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library ../../lib/libloclib.a"
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen && $(CMAKE_COMMAND) -P CMakeFiles/loclib.dir/cmake_clean_target.cmake
 	cd /home/kayu24/Desktop/Process_Monitor_Ubuntu24/build/userspace/loc_gen && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/loclib.dir/link.txt --verbose=$(VERBOSE)
 

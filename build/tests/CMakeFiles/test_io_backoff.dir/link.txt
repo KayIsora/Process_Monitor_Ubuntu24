@@ -1,1 +1,1 @@
-/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/test_io_backoff.dir/libpm/test_io_backoff.c.o -o ../bin/test_io_backoff  ../lib/libpm.a 
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/test_io_backoff.dir/libpm/test_io_backoff.c.o -o ../bin/test_io_backoff  ../lib/libpm.a 
