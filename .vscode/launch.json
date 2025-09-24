@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug pmcli",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/pmcli",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "lldb"
+    },
+    {
+      "name": "Debug loc_gen",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/loc_gen",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "lldb"
+    },
+    {
+      "name": "Debug vts",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/vts",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "lldb"
+    }
+  ]
+}

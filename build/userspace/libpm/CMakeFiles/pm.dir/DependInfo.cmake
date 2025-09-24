@@ -1,0 +1,26 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/libpm/src/backoff.c" "userspace/libpm/CMakeFiles/pm.dir/src/backoff.c.o" "gcc" "userspace/libpm/CMakeFiles/pm.dir/src/backoff.c.o.d"
+  "/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/libpm/src/circuit_breaker.c" "userspace/libpm/CMakeFiles/pm.dir/src/circuit_breaker.c.o" "gcc" "userspace/libpm/CMakeFiles/pm.dir/src/circuit_breaker.c.o.d"
+  "/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/libpm/src/parser.c" "userspace/libpm/CMakeFiles/pm.dir/src/parser.c.o" "gcc" "userspace/libpm/CMakeFiles/pm.dir/src/parser.c.o.d"
+  "/home/kayu24/Desktop/Process_Monitor_Ubuntu24/userspace/libpm/src/procfs_io.c" "userspace/libpm/CMakeFiles/pm.dir/src/procfs_io.c.o" "gcc" "userspace/libpm/CMakeFiles/pm.dir/src/procfs_io.c.o.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

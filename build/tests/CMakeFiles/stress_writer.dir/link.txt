@@ -1,0 +1,1 @@
+/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/stress_writer.dir/vts/stress_writer.c.o -o ../bin/stress_writer  -lm 

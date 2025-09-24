@@ -1,0 +1,17 @@
+{
+  "cmake.generator": "Ninja",
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.configureSettings": {
+    "CMAKE_C_COMPILER": "clang"
+  },
+  "C_Cpp.default.compilerPath": "clang",
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.intelliSenseEngine": "default",
+  "cmake.buildBeforeRun": true,
+  "files.associations": {
+    "vts_log.h": "c",
+    "unistd.h": "c",
+    "loc_api.h": "c"
+  }
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libpm.a CMakeFiles/pm.dir/src/procfs_io.c.o CMakeFiles/pm.dir/src/circuit_breaker.c.o CMakeFiles/pm.dir/src/backoff.c.o CMakeFiles/pm.dir/src/parser.c.o
+/usr/bin/ranlib ../../lib/libpm.a

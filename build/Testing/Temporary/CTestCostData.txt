@@ -1,0 +1,14 @@
+has_pmcli 3 0.00919475
+has_loc_gen 3 0.00792132
+has_vts 3 0.00624792
+run_pmcli 2 0.0113973
+run_loc_gen 3 0.00334492
+run_vts 3 0.00448283
+smoke_true 3 0.00322477
+has_binaries 3 0.00335676
+fake_procfs_scan 2 0.0114945
+fakefs_gen 1 0.00883643
+test_io_backoff 1 0.00153024
+test_integ_fakefs 1 0.00238782
+test_cb 1 0.00182206
+---

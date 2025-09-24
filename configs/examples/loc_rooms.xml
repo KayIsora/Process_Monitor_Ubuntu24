@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rooms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../schemas/loc_rooms.xsd">
+  <room id="cpu_room" type="cpu" state="started"/>
+  <room id="mem_room" type="mem" state="stopped"/>
+</rooms>

@@ -1,0 +1,1 @@
+/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/test_integ_fakefs.dir/libpm/test_integ_fakefs.c.o -o ../bin/test_integ_fakefs  ../lib/libpm.a 

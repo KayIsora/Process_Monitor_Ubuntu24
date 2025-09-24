@@ -1,0 +1,1 @@
+savedcmd_/home/kayu24/Desktop/Process_Monitor_Ubuntu24/kernel/my_driver/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/kayu24/Desktop/Process_Monitor_Ubuntu24/kernel/my_driver/Module.symvers -T /home/kayu24/Desktop/Process_Monitor_Ubuntu24/kernel/my_driver/modules.order -i Module.symvers -e 

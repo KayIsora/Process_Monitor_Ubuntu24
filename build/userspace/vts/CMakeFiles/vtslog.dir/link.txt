@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libvtslog.a CMakeFiles/vtslog.dir/src/log_write.c.o
+/usr/bin/ranlib ../../lib/libvtslog.a

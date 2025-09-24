@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux-Clang",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64",
+            "includePath": [
+                "${workspaceFolder}/userspace/libpm/include",
+                "${workspaceFolder}/userspace/loc_gen/include",
+                "${workspaceFolder}/userspace/vts/include",
+                "${workspaceFolder}/cli/src",
+                "${workspaceFolder}",
+                "${workspaceFolder}/kernel/my_driver/include"
+            ],
+            "defines": [
+                "_GNU_SOURCE"
+            ]
+        }
+    ],
+    "version": 4
+}
